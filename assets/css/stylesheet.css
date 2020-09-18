@@ -126,7 +126,6 @@ html, body {
 
 ::-webkit-scrollbar-thumb {
   background: white;
-  border-radius: 50%;
   border: none; }
 
 #preloader {
