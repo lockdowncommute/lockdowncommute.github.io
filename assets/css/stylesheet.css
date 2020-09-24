@@ -59,9 +59,7 @@ q:before, q:after {
 
 @font-face {
   font-family: 'Arial Narrow';
-  src: url("../fonts/ArialNarrow.eot");
-  src: local("☺"), url("../fonts/ArialNarrow.woff") format("woff"), url("../fonts/ArialNarrow.ttf") format("truetype"), url("../fonts/ArialNarrow.svg") format("svg");
-  font-weight: normal;
+  src: url("/assets/fonts/ArialNarrow.woff");
   font-style: normal; }
 
 html, body {
