@@ -66,7 +66,7 @@ q:before, q:after {
 
 html, body {
   font-family: 'Arial Narrow', sans-serif;
-  font-size: 30px;
+  font-size: 36px;
   line-height: 42px;
   font-weight: normal;
   -webkit-font-smoothing: antialiased; }
@@ -90,7 +90,7 @@ a {
       animation: pulseColor 0.5s infinite; }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   line-height: 60px; }
 
 .about {
