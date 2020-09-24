@@ -1,18 +1,18 @@
 @charset "UTF-8";
-.centreXY, #lookAround, #lookAround .text{
+.centreXY, #Arrows, #Arrows .text{
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-.centreX, #lightsButton, #enterButton, #lookAround .n, #lookAround .s {
+.centreX, #sceneButton, #infoButton, #Arrows .n, #Arrows .s {
   left: 50%;
   -ms-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.centreY, #lookAround .e, #lookAround .w {
+.centreY, #Arrows .e, #Arrows .w {
   top: 50%;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -166,7 +166,7 @@ html, body {
     width: 100%;
     height: 100%;
     padding: 0; } }
-#lightsButton, #enterButton {
+#sceneButton, #infoButton {
   cursor: pointer;
   position: fixed;
   background-color: white;
@@ -175,28 +175,28 @@ html, body {
     box-shadow: 0 -1px 30px 0 rgba(255,255,255,1);
     white-space: nowrap;
   padding: 10px 25px; }
-  #lightsButton:hover, #enterButton:hover, #lightsButton.active:hover {
+  #sceneButton:hover, #infoButton:hover, #sceneButton.active:hover {
     background-color: grey;
     border: 0px solid #FFF;
     color: #FFF; }
-    #lightsButton.active, #enterButton.active {
+    #sceneButton.active, #infoButton.active {
       background-color: white;
       border: 0px solid #FFF;
       color: black; }
 
 @media screen and (max-width: 950px) and (min-width: 10px) {
-  #lightsButton:hover, #enterButton:hover {
+  #sceneButton:hover, #infoButton:hover {
     background-color: grey;
     border: 0px solid #000;
     color: #000; } }
-#lightsButton {
+#sceneButton {
   top: 30px; }
 
-#enterButton {
+#infoButton {
   bottom: 30px;
   display: none; }
 
-#lookAround {
+#Arrows {
   width: 300px;
   height: 300px;
   padding: 30px 30px;
@@ -205,25 +205,25 @@ html, body {
   border-radius: 100px 100px 100px 100px;
   box-shadow: 0 -1px 30px 0 rgba(255,255,255,1);
   position: fixed; }
-  #lookAround .n, #lookAround .s, #lookAround .e, #lookAround .w, #lookAround .text {
+  #Arrows .n, #Arrows .s, #Arrows .e, #Arrows .w, #Arrows .text {
     position: fixed; }
-  #lookAround .n {
+  #Arrows .n {
     top: 30px; }
-  #lookAround .s {
+  #Arrows .s {
     bottom: 30px; }
-  #lookAround .e {
+  #Arrows .e {
     right: 30px; }
-  #lookAround .w {
+  #Arrows .w {
     left: 30px; }
-  #lookAround .text {
+  #Arrows .text {
     text-align: center; }
-  #lookAround
+  #Arrows
     top: 20px;
     right: 20px;
     cursor: pointer; }
 
 @media screen and (max-width: 950px) and (min-width: 10px) {
-  #lookAround {
+  #Arrows {
     width: calc(100% - 40px); } }
 .about {
   position: relative;
@@ -269,15 +269,15 @@ header a {
     border-radius: 100px 100px 100px 100px;
       box-shadow: 0 -1px 30px 0 rgba(255,255,255,1);
       white-space: nowrap; }
-  header a.left {
+  header a.leftButton {
     left: 30px; }
-  header a.right {
+  header a.rightButton {
     right: 30px; }
 
 @media screen and (max-width: 950px) and (min-width: 10px) {
-  header a.left {
+  header a.leftButton {
     left: 20px; }
-  header a.right {
+  header a.rightButton {
     right: 20px; } }
 footer {
   position: relative;
