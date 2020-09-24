@@ -110,13 +110,13 @@ audioLoader.load( 'assets/audio/Bex.mp3', function( buffer ) {
     }
   } );
 
-  //SKYBOX
+  //skybox
   skyBox = new THREE.Mesh( new THREE.BoxBufferGeometry( 100000, 100000, 100000 ), equirectMaterial );
   scene.add( skyBox );
   skyBox.material = equirectMaterial;
   skyBox.visible = true;
 
-  //MATERIALS
+  //materials
   var screen1 = new THREE.MeshStandardMaterial({
     roughness: 0,
     metalness: 1,
@@ -146,15 +146,15 @@ audioLoader.load( 'assets/audio/Bex.mp3', function( buffer ) {
     refractionRatio: 0.8
   });
 
-  //MODEL LOADER
+  //load model
   var loader = new THREE.PLYLoader();
   loader.load( '/assets/models/ply/Monitor.ply', function ( geometry ) {
     geometry.center()
     createScene( geometry, screen1, screen2, screen3, screen4 );
   } );
 
-  //WINDOW RESIZE
-  window.addEventListener( 'resize', onWindowResize, false );
+  //rezise window
+  
 
   $('#lightsButton').click(function(){
     if (!$('#lightsButton').hasClass('active')) {
